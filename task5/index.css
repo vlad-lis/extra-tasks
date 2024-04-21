@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#unixtime {
+  position: relative;
+}
+
+#unixtime::before {
+  content: attr(data-content);
+  position: absolute;
+}
